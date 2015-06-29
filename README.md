@@ -19,7 +19,7 @@ app.py>
 
 ```
 app = Flask(__name__)
-mongoclient = MongoClient('mongodb://<dbuser>:<dbpassword>@ds041032.mongolab.com:41032/<dbtitle>'XXXX')
+mongoclient = MongoClient('mongodb://<dbuser>:<dbpassword>@ds041032.mongolab.com:41032/<dbtitle>')
 
 dbtitle : Database title
 dbuser  : Mongolab username
