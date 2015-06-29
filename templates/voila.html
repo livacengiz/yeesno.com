@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="{{ url_for('static', filename='share.js') }}"></script>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+  <title>{{data['question']}}</title>
+</head>
+<body>
+    <h2>{{data['answer'].upper()}}<br></h2>
+    <a href="/" id="create" class="fixed">Create <br> Your Own</a>
+    <div class='share-button share-button-top'></div>
+    <script type="text/javascript">
+    var share_button_top = new Share(".share-button-top", {
+      title: (window.location.pathname + " YeesNo.com" ),
+      description: "Yes or No site generator",
+    });
+    </script>
+</body>
+</html>

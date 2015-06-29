@@ -1,0 +1,114 @@
+/* RESET CSS*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+/**/
+a {
+  text-decoration: none;
+  }
+body{
+    background: #333;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 52px;
+    color: #fff;
+    text-align: center;
+    font-family: 'PT Sans';
+    max-height: 500px;
+    }
+h2{
+  color: #fff;
+  font-size: 3em;
+  margin-top: 1em;
+  }
+h1{
+    margin : 0 auto;
+    margin-top: 1em;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 120px;
+}
+
+form{
+    color: #fff;
+    font-size: 32px;
+    font-family: 'PT Sans';
+    margin-top: 2em;
+    }
+
+.question{
+    width: 370px;
+    height: 40px;
+    font-size: 18px;
+    font-family: 'Pt Sans';
+    font-weight: 100;
+    color: #333;
+    line-height: 33px;
+    margin-top: 20px;
+
+    }
+
+img{
+    box-shadow:2px 0px 30px 5px rgba(95, 95, 95, 0.74);
+    }
+
+#create{
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-family: 'PT Sans';
+    border:1px;
+    margin-top: 10px;
+    background: #ca0000;
+    color: #fff;
+    padding: 8px;
+    }
+#create:hover {
+    background: rgba(202, 0, 0, 0.66);    
+    cursor: pointer;
+    }
+.fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    display:block;
+    margin: 0 auto;
+    right: 0;
+}
+
+#send{
+    width: 200px;
+    height: 60px;
+    font-size: 32px;
+    font-family: 'PT Sans';
+    border:0px;
+    margin-top: 10px;
+    background: #ca0000;
+    color: #fff;
+    }
+
+#send:hover {
+    background: rgba(202, 0, 0, 0.66);
+    cursor: pointer;
+    }
+.share-button {
+    position: absolute;
+    top: 0;
+    right: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
