@@ -153,7 +153,7 @@ Share = (function(superClass) {
       caption: null,
       title: this.default_title(),
       image: this.default_image(),
-      description: (window.location.pathname),
+      description: (window.location.pathname + "#yeesno"),
       ui: {
         flyout: 'bottom left',
         button_text: 'Share',
@@ -168,7 +168,7 @@ Share = (function(superClass) {
         twitter: {
           enabled: true,
           url: null,
-          description: (window.location.pathname),
+          description: (window.location.pathname + "#yeesno"),
         },
         facebook: {
           enabled: true,
@@ -177,7 +177,7 @@ Share = (function(superClass) {
           app_id: null,
           title: null,
           caption: null,
-          description: (window.location.pathname),
+          description: (window.location.pathname + "#yeesno"),
           image: null
         },
         pinterest: {
