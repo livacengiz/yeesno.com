@@ -4,10 +4,10 @@
 ##Usage
 
 ##Project requirements
-- Python 2.7.6
+- Python 3.4
 - Flask
 - Pymongo | MongoClient
-- Slugify
+- slugify
 ```
 Mongolab configuration
 ```
@@ -19,12 +19,7 @@ app.py>
 
 ```
 app = Flask(__name__)
-mongoclient = MongoClient('mongodb://<dbuser>:<dbpassword>@ds041032.mongolab.com:41032/<dbtitle>')
-
-dbtitle : Database title
-dbuser  : Mongolab username
-dbpassword : Database password
-
+mongoclient = MongoClient('mongodb://XXXX:XXXXXXX@ds041032.mongolab.com:41032/XXXX')
 ```
 ###Support
 - [Halil Kaya](http://github.com/halilkaya)

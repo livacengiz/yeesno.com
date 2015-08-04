@@ -6,7 +6,7 @@ from flask import render_template, request, redirect, abort
 from pymongo import MongoClient
 import re
 from slugify import slugify
-import unicodedata
+import datetime
 
 app = Flask(__name__)
 mongoclient = MongoClient('mongodb://<dbuser>:<dbpassword>@ds041032.mongolab.com:41032/<dbtitle>')
@@ -24,17 +24,20 @@ def voila(question):
             abort(404)
         data = {
             "question": yorn['question'],
-            "answer": yorn['answer']
+            "answer": yorn['answer'],
+            "date": yorn['date']
         }
         return render_template("voila.html", data=data)
     if request.method == 'POST':
         question = request.form.get('ques')
         answer = request.form.get('answer')
         slug = slugify(request.form.get('ques')).replace('-', '') + '.com'
+        date = datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d')
         data = {
             "question": question,
             "answer": answer,
-            "slug": slug
+            "slug": slug,
+            "date": date
         }
         mongoclient.yorn.yorns.insert(data)
         return render_template ("voila.html", data=data)
