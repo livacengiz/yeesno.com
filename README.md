@@ -4,10 +4,10 @@
 ##Usage
 
 ##Project requirements
-- Python 3.4
+- Python 2.7.6
 - Flask
 - Pymongo | MongoClient
-- slugify
+- Slugify
 ```
 Mongolab configuration
 ```
