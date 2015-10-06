@@ -4,7 +4,7 @@
 ##Usage
 
 ##Project requirements
-- Python 3.4
+- Python
 - Flask
 - Pymongo | MongoClient
 - slugify
