@@ -6,40 +6,31 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
   <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
   
-  <a href="/"><h1></h1></a>
-   <script type="text/javascript">
-    	function makeurl() {
-    		var slug = convertToSlug(document.getElementById('ques').value);
-    		document.getElementById('quesform').action = '/' + slug + '.com';
-    	}
-      function convertToSlug(text) {
-        var trMap = {
-            'çÇ':'c',
-            'ğĞ':'g',
-            'şŞ':'s',
-            'üÜ':'u',
-            'ıİ':'i',
-            'öÖ':'o'
-        };
-        for(var key in trMap) {
-            text = text.replace(new RegExp('['+key+']','g'), trMap[key]);
-        }
-        return  text.replace(/[^-a-zA-Z0-9\s]+/ig, '')
-                    .replace(/\s/gi, "")
-                    .replace(/[-]+/gi, "")
-                    .toLowerCase();
-     
-        }
-   </script>
+  <header class="logo">
+  </header>
 
-  <form method="POST" id="quesform">
-    <input type="text"  placeholder=" Question?"  required autofocus class="question" id="ques" name="ques"></br>
-    <input type="text"  placeholder=" Answer (max 6 character)" required  class="question" name="answer" maxlength="6"></br>
-    <input type="submit" onclick="makeurl()" value="Create" id="send" href="">
-  </form>
+  <section>
+    <form method="POST" id="quesform">
+    <div class="language">
+        <span id="tr" onclick="switchLang('tr')">[TR]</span>
+        <span id="en" onclick="switchLang('en')">[EN]</span> <br>
+      </div>
+      <input type="text"  placeholder=" Question?"  required autofocus class="from-input" id="question" name="ques"></br> <br>
+      <!-- <input type="text"  placeholder=" Answer (max 6 character)" required  class="from-input" name="answer" maxlength="6"></br> -->
+        <input type="radio" name="answer" value="Yes" id="yes"><span id="yesValue">Yes</span>
+        <input type="radio" name="answer" value="No" id="no"><span id="noValue">No</span> <br>
+      <input type="submit" onclick="makeurl()" value="Create" id="send" href="">
+    </form>
+  </section>
+
+  <footer>
+    <span>Imam Hatipler Kapatilsin</span>
+  </footer>
 
       <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-46834633-3', 'auto');ga('send', 'pageview');
