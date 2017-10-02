@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="{{ url_for('static', filename='share.js') }}"></script>
   <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
   <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
   <title>{{data['question']}}</title>
@@ -19,9 +17,11 @@
     </footer>
     <script type="text/javascript">
     var share_button_top = new Share(".share-button-top", {
-      title: (window.location.pathname + " YeesNo.com" ),
+      title: (window.location.pathname + " Yeesno.com" ),
       description: "Yes or No site generator",
     });
     </script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="{{ url_for('static', filename='share.js') }}"></script>
 </body>
 </html>

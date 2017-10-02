@@ -18,9 +18,9 @@ body{
 h2{
   color: #fff;
   font-size: 3em;
-  margin-top: 1em;
+  margin-top: 2em;
   }
-h1{
+.logo{
     margin : 0 auto;
     margin-top: 1em;
     background-image: url('logo.png');
@@ -36,7 +36,7 @@ form{
     margin-top: 2em;
     }
 
-.question{
+.from-input{
     width: 370px;
     height: 40px;
     font-size: 18px;
@@ -76,6 +76,24 @@ img{
     right: 0;
 }
 
+footer {
+    color: #333;
+    position: fixed;
+    bottom: 0px;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    width: 100%;
+}
+
+
+.language {
+    font-size: 12px;
+    text-align: right;
+    width: 370px;
+    margin: 0 auto;
+    cursor: pointer;
+}
 #send{
     width: 200px;
     height: 60px;
