@@ -25,9 +25,10 @@ function switchLang(lang) {
 }
 
 function makeUrl() {
+  debugger
   const question = document.getElementById('question').value
   const slug = slugify(question)
-  document.getElementById("quesform").action = "/" + slug
+  document.getElementById("quesform").action = "/" + slug + ".com"
 
 }
 
